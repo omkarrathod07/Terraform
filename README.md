@@ -29,4 +29,11 @@ A Terraform module is a collection of resources that are grouped together to be 
 2. Can be reusable
 3. Can change variable values (change values be providing variable name.) for reusability
 
+## File Structure
+```markdown
+- **AWS** → Infrastructure components for Amazon Web Services  
+- **Azure** → Microsoft Azure resources and services  
+- **Terraform_Module** → Reusable IaC modules for AWS & Azure  
+- **Tools** → CI/CD, automation, and development utilities  
+
 ---
