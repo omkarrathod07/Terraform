@@ -35,5 +35,54 @@ A Terraform module is a collection of resources that are grouped together to be 
 - **Azure** → Microsoft Azure resources and services  
 - **Terraform_Module** → Reusable IaC modules for AWS & Azure  
 - **Tools** → CI/CD, automation, and development utilities  
-
+```text
+├── AWS
+│   ├── Auto-Scaling
+│   ├── EBS-Volume
+│   ├── EC2
+│   ├── EFS
+│   ├── EKS
+│   ├── ELB
+│   ├── ELB-with-ASG
+│   ├── RDS
+│   ├── S3-Bucket
+│   └── VPC
+├── Azure
+│   ├── App-Service
+│   ├── Azure-Container
+│   ├── Azure-Cosmodb
+│   ├── Azure-Firewall
+│   ├── Azure-Kubernetes
+│   ├── Azure-Storage
+│   ├── Key-Vault
+│   ├── Load-Balancer
+│   ├── Resource-Group
+│   ├── Virtual-Machine
+│   └── Virtual-Network
+├── Commands
+├── Terraform_Module
+│   ├── AWS
+│   │   ├── ec2
+│   │   ├── efs
+│   │   ├── eks
+│   │   ├── s3
+│   │   └── vpc
+│   └── Azure
+│       ├── appservice
+│       ├── container
+│       ├── cosmosdb
+│       ├── firewall
+│       ├── kubernetes
+│       ├── loadbalancer
+│       ├── resourcegroup
+│       ├── storage
+│       ├── virtualmachine
+│       └── virtualnetwork
+└── Tools
+    ├── Ansible
+    ├── Docker
+    ├── Dotnet
+    ├── Jenkins
+    └── Maven
+```
 ---
