@@ -28,3 +28,12 @@ variable "tags" {
     Resource-Group = "Practic-RG"
   }
 }
+variable "os_profile" {
+  type = map(string)
+  default = {
+    "computer_name" = "ubuntu"
+    "admin_password" = "Root@123"
+    "admin_username" = "root"
+  }
+  description = "default user is root and passward is Root@123"
+}

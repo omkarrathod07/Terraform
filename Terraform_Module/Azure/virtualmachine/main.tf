@@ -51,9 +51,9 @@ resource "azurerm_virtual_machine" "practic-VM" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name = "ubuntu"
-    admin_password = "Root@123"
-    admin_username = "root"
+    computer_name = var.os_profile.computer_name
+    admin_password = var.os_profile.admin_password
+    admin_username = var.os_profile.admin_username
   }
   os_profile_linux_config {
     disable_password_authentication = false

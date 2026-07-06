@@ -25,8 +25,66 @@ Below are the essential Terraform commands used for initialization, validation, 
 
 A Terraform module is a collection of resources that are grouped together to be managed as a single unit. Modules help in organizing and reusing infrastructure configurations, making it easier to standardize and scale infrastructure provisioning.
 ### Workflow:
+
 1. Module must be created using 'module' keyword.
 2. Can be reusable
 3. Can change variable values (change values be providing variable name.) for reusability
 
+## File Structure
+
+- **AWS** → Infrastructure components for Amazon Web Services  
+- **Azure** → Microsoft Azure resources and services  
+- **Terraform_Module** → Reusable IaC modules for AWS & Azure  
+- **Tools** → CI/CD, automation, and development utilities  
+
+```markdown
+├── AWS
+│   ├── Auto-Scaling
+│   ├── EBS-Volume
+│   ├── EC2
+│   ├── EFS
+│   ├── EKS
+│   ├── ELB
+│   ├── ELB-with-ASG
+│   ├── RDS
+│   ├── S3-Bucket
+│   └── VPC
+├── Azure
+│   ├── App-Service
+│   ├── Azure-Container
+│   ├── Azure-Cosmodb
+│   ├── Azure-Firewall
+│   ├── Azure-Kubernetes
+│   ├── Azure-Storage
+│   ├── Key-Vault
+│   ├── Load-Balancer
+│   ├── Resource-Group
+│   ├── Virtual-Machine
+│   └── Virtual-Network
+├── Commands
+├── Terraform_Module
+│   ├── AWS
+│   │   ├── ec2
+│   │   ├── efs
+│   │   ├── eks
+│   │   ├── s3
+│   │   └── vpc
+│   └── Azure
+│       ├── appservice
+│       ├── container
+│       ├── cosmosdb
+│       ├── firewall
+│       ├── kubernetes
+│       ├── loadbalancer
+│       ├── resourcegroup
+│       ├── storage
+│       ├── virtualmachine
+│       └── virtualnetwork
+└── Tools
+    ├── Ansible
+    ├── Docker
+    ├── Dotnet
+    ├── Jenkins
+    └── Maven
+```
 ---
