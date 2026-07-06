@@ -37,7 +37,6 @@ A Terraform module is a collection of resources that are grouped together to be 
 - **Terraform_Module** → Reusable IaC modules for AWS & Azure  
 - **Tools** → CI/CD, automation, and development utilities  
 
-```markdown
 ├── AWS
 │   ├── Auto-Scaling
 │   ├── EBS-Volume
