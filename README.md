@@ -85,6 +85,7 @@ A Terraform module is a collection of resources that are grouped together to be 
     ├── Docker
     ├── Dotnet
     ├── Jenkins
-    └── Maven
+    ├── Maven
+    └── Terraform
 ```
 ---
