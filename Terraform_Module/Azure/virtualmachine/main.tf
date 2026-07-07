@@ -39,16 +39,16 @@ resource "azurerm_virtual_machine" "practic-VM" {
   zones = [ "Zone1" ]
 
   storage_image_reference {
-    publisher = "Canonical"
-    offer = "0001-com-ubuntu-server-jammy"
-    sku = "22_04-lts"
-    version = "latest"
+    publisher = var.storage_image_reference.publisher
+    offer = var.storage_image_reference.offer
+    sku = var.storage_image_reference.sku
+    version = var.storage_image_reference.version
   }
   storage_os_disk {
-    name = "myosdisk1"
-    caching = "ReadWrite"
-    create_option = "FromImage"
-    managed_disk_type = "Standard_LRS"
+    name = var.storage_os_disk.name
+    caching = var.storage_os_disk.caching
+    create_option = var.storage_os_disk.create_option
+    managed_disk_type = var.storage_os_disk.managed_disk_type
   }
   os_profile {
     computer_name = var.os_profile.computer_name
