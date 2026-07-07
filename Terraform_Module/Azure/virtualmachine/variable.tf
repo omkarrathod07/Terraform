@@ -37,3 +37,21 @@ variable "os_profile" {
   }
   description = "default user is root and passward is Root@123"
 }
+variable "storage_os_disk" {
+  type = map(string)
+  default = {
+    "name" = "myosdisk1"
+    "caching" = "ReadWrite"
+    "create_option" = "FromImage"
+    "managed_disk_type" = "Standard_LRS"
+  }
+}
+variable "storage_image_reference" {
+  type = map(string)
+  default = {
+    "publisher" = "Canonical"
+    "offer" = "0001-com-ubuntu-server-jammy"
+    "sku" = "22_04-lts"
+    "version" = "latest"
+  }
+}
