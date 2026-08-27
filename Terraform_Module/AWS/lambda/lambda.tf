@@ -26,13 +26,10 @@ resource "aws_lambda_function" "lambda-demo" {
   handler = "index.handler"
   code_sha256 = data.archive_file.nodejs.output_base64sha256
 
-  runtime = "nodejs24.x"
+  runtime = var.runtime
 
   environment {
-    variables = {
-      ENVIRONMENT = "Production"
-      LOG_LEVEL = "Info"
-    }
+    variables = var.environment
   }
   tags = var.tags
 }
